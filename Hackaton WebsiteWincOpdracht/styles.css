@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 60px auto 500px;
+  grid-template-areas: "hd hd" "main main" "footer footer";
+}
+
+main,
+footer {
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  grid-area: hd;
+  padding: 1em;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background: darkslategrey;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.Photo {
+  height: 300px;
+  width: 380px;
+}
+
+.Button {
+  background-color: black;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+  margin-bottom: 4em;
+}
+.Button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.Review {
+  margin: auto;
+  width: 14em;
+  font-family: cursive;
+  color: rgb(119, 117, 117);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.Gezin,
+.Zwangerschap {
+  height: 425px;
+  width: 300px;
+}
+
+.Profielfoto {
+  height: 350px;
+  width: 240px;
+  background-color: lightgrey;
+  padding: 1em 2em;
+  border-radius: 75px;
+}
+
+.Button2:visited {
+  color: white;
+  text-decoration: none;
+}
+.Button2:link {
+  color: white;
+  text-decoration: none;
+}
+
+.Container2 {
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 12px;
+  padding: 1em;
+}
+.Portfoliofotos {
+  height: 360px;
+  width: 500px;
+  padding: 1em 0em;
+  margin: auto;
+}
+
+.Portfoliofotos2 {
+  height: 810px;
+  width: 520px;
+  padding: 1em 0em;
+  margin: auto;
+}
+footer li a:visited {
+  color: floralwhite;
+  text-decoration: none;
+}
+footer li a:link {
+  color: floralwhite;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: lightseagreen;
+}
+
+.Menu {
+  color: black;
+}
+.Menu:link {
+  color: black;
+}
+
+@media screen and (min-width: 700px) {
+  .Photo {
+    height: 500px;
+    width: 700px;
+  }
+  .container1,
+  .Container2,
+  .container3,
+  .Container {
+    padding: 10px;
+    display: flex;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box5,
+  .box6,
+  .box7 {
+    flex: 1;
+  }
+
+  .box5,
+  .box6,
+  .box7 {
+    margin-left: 75px;
+  }
+  .box4 {
+    flex: 1;
+    font-size: 15px;
+    text-align: center;
+    padding: auto;
+  }
+
+  .QuickLinks,
+  .Adress,
+  .SocialMedia {
+    flex: 1;
+    text-align: left;
+  }
+
+  .Review {
+    margin: 20px auto;
+    width: 25em;
+    font-size: 25px;
+  }
+}
